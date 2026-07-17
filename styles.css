@@ -652,25 +652,68 @@ img {
     box-shadow: 0 10px 30px rgba(245, 127, 23, 0.2);
 }
 
-.special-bonus-images {
+.bonus-detail {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 20px;
-    padding: 30px 20px 0;
+    background: #FFFDE7;
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+    border: 1px solid #FFF59D;
+    text-align: left;
 }
 
-.bonus-img {
-    width: 45%;
-    max-width: 200px;
+.bonus-detail-img {
+    width: 120px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    border: 2px solid #FFF;
 }
 
-.bonus-img:hover {
+.bonus-detail-img:hover {
     transform: scale(1.05);
+}
+
+.bonus-detail-text h4 {
+    margin-bottom: 5px;
+    color: #F57F17;
+    font-size: 1.2rem;
+}
+
+.bonus-badge {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.bonus-badge-parents {
+    background-color: #D32F2F; /* Vermelho para chamar atenção pro presente dos pais */
+}
+
+.bonus-detail-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .bonus-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bonus-detail-img {
+        width: 150px;
+    }
 }
 
 .special-bonus-header {
