@@ -613,6 +613,27 @@ img {
     box-shadow: 0 10px 30px rgba(245, 127, 23, 0.2);
 }
 
+.special-bonus-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px 0;
+}
+
+.bonus-img {
+    width: 45%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    border: 2px solid #FFF;
+}
+
+.bonus-img:hover {
+    transform: scale(1.05);
+}
+
 .special-bonus-header {
     background-color: #F57F17;
     color: white;
