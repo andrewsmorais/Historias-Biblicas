@@ -977,25 +977,27 @@ img {
     }
     
     .stacked-images {
-        height: 420px; /* Aumenta a altura no celular para as imagens não sobreporem o texto de baixo */
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         margin-bottom: 30px;
+        perspective: none;
     }
     
     .stack-img {
-        width: 75%;
+        position: static;
+        width: 30%;
+        transform: none !important;
+        border: 3px solid white;
     }
     
-    .stack-front {
-        top: 60px;
-        left: 12%;
-    }
-    
-    .stack-back-right {
-        top: 30px;
-    }
-    
-    .stack-back-left {
-        top: 10px;
+    .stacked-images:hover .stack-back-left,
+    .stacked-images:hover .stack-back-right,
+    .stacked-images:hover .stack-front {
+        transform: none !important;
     }
     
     .guarantee-content {
