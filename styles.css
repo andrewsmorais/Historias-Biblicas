@@ -142,6 +142,45 @@ img {
     max-width: 600px;
 }
 
+.btn-price-old {
+    display: block;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: line-through;
+    opacity: 0.85;
+    margin-bottom: 2px;
+}
+
+/* Offer Summary inside Pricing Box */
+.offer-summary-inside {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px dashed #E0E0E0;
+}
+
+.offer-summary-inside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offer-summary-inside li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.offer-summary-inside li i {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
 /* Efeito Pulsante para o CTA principal */
 .pulse {
     animation: pulse-animation 2s infinite;
