@@ -547,9 +547,18 @@ img {
     box-shadow: var(--shadow-sm);
 }
 
-.book-icon {
-    font-size: 4rem;
-    margin-bottom: 15px;
+.included-cover-img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    border: 2px solid #EEE;
+}
+
+.included-card:hover .included-cover-img {
+    transform: translateY(-5px);
 }
 
 .included-card h3 {
