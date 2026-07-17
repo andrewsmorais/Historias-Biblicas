@@ -341,7 +341,8 @@ img {
 .stacked-images {
     position: relative;
     width: 100%;
-    height: 450px; /* Ajuste a altura dependendo das proporções do PDF */
+    max-width: 480px; /* Limita a largura para não invadir o texto ao lado */
+    height: 520px; /* Aumenta a altura para caber os PDFs perfeitamente */
     margin: 0 auto;
     perspective: 1000px;
 }
@@ -972,6 +973,29 @@ img {
     
     .solution-content {
         flex-direction: column;
+        gap: 30px;
+    }
+    
+    .stacked-images {
+        height: 420px; /* Aumenta a altura no celular para as imagens não sobreporem o texto de baixo */
+        margin-bottom: 30px;
+    }
+    
+    .stack-img {
+        width: 75%;
+    }
+    
+    .stack-front {
+        top: 60px;
+        left: 12%;
+    }
+    
+    .stack-back-right {
+        top: 30px;
+    }
+    
+    .stack-back-left {
+        top: 10px;
     }
     
     .guarantee-content {
