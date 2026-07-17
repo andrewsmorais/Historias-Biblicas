@@ -582,8 +582,8 @@ img {
 }
 
 .bonus-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -600,6 +600,76 @@ img {
     color: #4CAF50;
     font-size: 1.5rem;
     margin-top: 5px;
+}
+
+/* SPECIAL BONUS CARD */
+.special-bonus-card {
+    background-color: #FFF9C4; /* Amarelo bem claro */
+    border: 3px dashed #F57F17; /* Laranja forte */
+    border-radius: var(--border-radius-lg);
+    padding: 0;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(245, 127, 23, 0.2);
+}
+
+.special-bonus-header {
+    background-color: #F57F17;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.special-bonus-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.special-bonus-content {
+    padding: 30px;
+}
+
+.special-bonus-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #424242;
+    line-height: 1.6;
+}
+
+.special-bonus-pricing {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed #FFCC80;
+    text-align: center;
+}
+
+.perceived-value {
+    color: #757575;
+    font-size: 1.1rem;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #D32F2F;
+}
+
+.offer-price {
+    font-size: 1.4rem;
+    color: #2E7D32;
+    margin-top: 10px !important;
+}
+
+.offer-price strong {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.offer-note {
+    display: block;
+    font-size: 0.9rem;
+    color: #616161;
+    margin-top: 5px;
+    font-weight: normal;
 }
 
 .pricing-box {
@@ -1007,10 +1077,6 @@ img {
     .stacked-images:hover .stack-back-right,
     .stacked-images:hover .stack-front {
         transform: none !important;
-    }
-    
-    .bonus-list {
-        grid-template-columns: 1fr;
     }
     
     .guarantee-content {
