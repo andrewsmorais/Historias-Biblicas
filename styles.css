@@ -1055,9 +1055,21 @@ img {
    ========================================================================== */
 @media (max-width: 768px) {
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
+        display: flex;
     }
+    
+    .hero-text {
+        display: contents;
+    }
+    
+    .hero-text .badges { order: 1; }
+    .hero-text h1 { order: 2; margin-bottom: 20px; }
+    .hero-image { order: 3; margin: 0 0 20px 0; }
+    .hero-text .subheadline { order: 4; }
+    .hero-text .cta-button { order: 5; margin-bottom: 15px; }
+    .hero-text .security-badges { order: 6; }
     
     .hero-text h1 {
         font-size: 2.2rem;
