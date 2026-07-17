@@ -67,4 +67,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     animateElements.forEach(el => observer.observe(el));
+
+    // 4. Facebook Pixel - Track InitiateCheckout on CTA button clicks
+    const ctaButtons = document.querySelectorAll('a.cta-button[href*="kiwify"]');
+    ctaButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Kit Bíblico Infantil Completo',
+                    content_category: 'E-book',
+                    value: 19.90,
+                    currency: 'BRL'
+                });
+            }
+        });
+    });
+
+    // 5. Facebook Pixel - Track ViewContent when user scrolls to pricing section
+    const pricingBox = document.querySelector('.pricing-box');
+    if (pricingBox) {
+        const pricingObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'ViewContent', {
+                            content_name: 'Kit Bíblico Infantil - Página de Preço',
+                            content_type: 'product',
+                            value: 19.90,
+                            currency: 'BRL'
+                        });
+                    }
+                    pricingObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        pricingObserver.observe(pricingBox);
+    }
 });
