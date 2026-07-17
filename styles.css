@@ -582,8 +582,8 @@ img {
 }
 
 .bonus-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -1007,6 +1007,10 @@ img {
     .stacked-images:hover .stack-back-right,
     .stacked-images:hover .stack-front {
         transform: none !important;
+    }
+    
+    .bonus-list {
+        grid-template-columns: 1fr;
     }
     
     .guarantee-content {
