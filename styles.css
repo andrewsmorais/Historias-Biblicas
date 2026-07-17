@@ -144,7 +144,7 @@ img {
 
 .btn-price-old {
     display: block;
-    font-size: 0.85em;
+    font-size: 1.2em;
     font-weight: 600;
     text-decoration: line-through;
     opacity: 0.85;
@@ -786,7 +786,7 @@ img {
 }
 
 .price-old {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--color-text-muted);
     text-decoration: line-through;
     margin-bottom: 10px;
