@@ -233,28 +233,32 @@ img {
 
 .hero-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
     position: relative;
     z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .hero-text {
-    flex: 1;
-    max-width: 600px;
+    width: 100%;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #01579B;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .subheadline {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #37474F;
 }
 
@@ -268,19 +272,43 @@ img {
 }
 
 .hero-image {
-    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .hero-image img {
-    width: 45%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 500px;
     object-fit: contain;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
-    animation: float 6s ease-in-out infinite;
+}
+
+.hero-bullets {
+    text-align: left;
+    margin: 0 auto 20px auto;
+    display: inline-block;
+}
+
+.hero-bullets ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-bullets li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-bullets li i {
+    font-size: 1.2rem;
 }
 
 .hero-image img:nth-child(2) {
