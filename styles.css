@@ -1153,50 +1153,7 @@ img {
     font-size: 1.5rem;
 }
 
-/* 10. GUARANTEE SECTION */
-.guarantee-section {
-    padding: 5rem 0;
-    background-color: #2E7D32;
-    color: white;
-}
 
-.guarantee-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0.1);
-    padding: 40px;
-    border-radius: var(--border-radius-lg);
-    border: 2px solid rgba(255,255,255,0.2);
-}
-
-.guarantee-icon {
-    font-size: 6rem;
-    color: #FFC107;
-}
-
-.guarantee-text h2 {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.guarantee-badge {
-    background-color: #FFC107;
-    color: #333;
-    display: inline-block;
-    padding: 8px 15px;
-    border-radius: var(--border-radius-sm);
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.guarantee-text p {
-    color: #E8F5E9;
-    font-size: 1.1rem;
-}
 
 /* 11. FAQ SECTION */
 .faq-section {
