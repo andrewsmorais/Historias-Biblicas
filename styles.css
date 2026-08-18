@@ -58,6 +58,33 @@ body {
     overflow-x: hidden;
 }
 
+/* BARRAS DE TOPO */
+.top-announcement-bar {
+    background-color: #0A1C14;
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.top-security-badge-wrapper {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.top-security-badge {
+    display: inline-block;
+    background-color: #81E891;
+    color: #111;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 800;
