@@ -1153,7 +1153,130 @@ img {
     font-size: 1.5rem;
 }
 
-
+/* 10. GUARANTEE SECTION */
+.guarantee-section-new {
+    background-color: #F0F7F4;
+    padding: 5rem 0;
+    text-align: center;
+}
+.css-seal {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.seal-circle {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle, #ffd700 0%, #daa520 100%);
+    border-radius: 50%;
+    border: 4px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+.seal-circle::after {
+    content: '';
+    position: absolute;
+    top: 4px; left: 4px; right: 4px; bottom: 4px;
+    border: 2px dashed #1a1a1a;
+    border-radius: 50%;
+}
+.seal-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-top: 5px;
+}
+.seal-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+}
+.seal-ribbon {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 40px;
+    background: #1a1a1a;
+    z-index: 0;
+}
+.seal-ribbon.left {
+    left: -15px;
+    transform: translateY(-50%) rotate(-10deg);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 50%, 0 0);
+}
+.seal-ribbon.right {
+    right: -15px;
+    transform: translateY(-50%) rotate(10deg);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 80% 50%, 100% 0);
+}
+.guarantee-title-new {
+    font-size: 2.2rem;
+    color: #0A3B2C;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.guarantee-desc-new {
+    font-size: 1.15rem;
+    color: #4A5D54;
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+.guarantee-list-new {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 40px auto;
+    max-width: 550px;
+    text-align: left;
+}
+.guarantee-list-new li {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    color: #184233;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.guarantee-check {
+    background-color: #DDF2E4;
+    color: #2E7D32;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+.guarantee-footer-new {
+    font-size: 1.05rem;
+    color: #4A5D54;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+}
+.guarantee-footer-new p {
+    margin: 0;
+}
 
 /* 11. FAQ SECTION */
 .faq-section {
