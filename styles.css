@@ -4,10 +4,10 @@
    :root {
     /* Cores Principais - Pastéis */
     --color-primary: #87CEEB; /* Azul Céu (Baby Blue) */
-    --color-primary-light: #F0F4F8;
-    --color-secondary: #F0F4F8; /* Amarelo Suave (Lemon Chiffon) */
-    --color-tertiary: #F0F4F8; /* Rosa Claro (Misty Rose) */
-    --color-quaternary: #F0F4F8; /* Verde Menta (Teal Light) */
+    --color-primary-light: #F3F8F5;
+    --color-secondary: #F3F8F5; /* Amarelo Suave (Lemon Chiffon) */
+    --color-tertiary: #F3F8F5; /* Rosa Claro (Misty Rose) */
+    --color-quaternary: #F3F8F5; /* Verde Menta (Teal Light) */
     
     /* Cores de Ação (CTAs) */
     --color-cta: #FF9800; /* Laranja/Dourado */
@@ -20,7 +20,7 @@
     
     /* Fundos */
     --bg-white: #FFFFFF;
-    --bg-light: #F0F4F8;
+    --bg-light: #F3F8F5;
     
     /* Tipografia */
     --font-heading: 'Nunito', sans-serif;
@@ -1581,7 +1581,7 @@ img {
 .faq-item {
     background-color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid #E2EBE5;
     border-radius: var(--border-radius-md);
 }
 
@@ -1590,6 +1590,6 @@ img {
 }
 
 .feature-icon {
-    background-color: #F0F4F8 !important; /* Mute the round icon background */
+    background-color: #F3F8F5 !important; /* Mute the round icon background */
     color: #1E88E5 !important; /* Make icon blue instead of pink for elegance */
 }
