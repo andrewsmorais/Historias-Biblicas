@@ -1547,17 +1547,34 @@ img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 10px;
+        justify-content: flex-start;
+        gap: 15px;
         margin-bottom: 30px;
         perspective: none;
+        
+        /* Habilitar scroll horizontal nativo (carrossel swipe) no celular */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 15px;
+        -webkit-overflow-scrolling: touch;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .stacked-images::-webkit-scrollbar {
+        display: none;
     }
     
     .stack-img {
         position: static;
-        width: 30%;
+        width: 85%; /* 85% a 90% da tela como solicitado */
+        max-width: 300px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
         transform: none !important;
-        border: 3px solid white;
+        border: 4px solid white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     
     .stacked-images:hover .stack-back-left,
@@ -1633,6 +1650,7 @@ img {
 
 /* ANIMACAO DE DESTAQUE DA GALERIA */
 .highlight-pulse {
+    cursor: pointer;
     background: linear-gradient(90deg, #FF9800, #FF5722);
     color: #FFFFFF !important;
     padding: 4px 15px;
