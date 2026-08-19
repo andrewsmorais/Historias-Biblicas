@@ -4,10 +4,10 @@
    :root {
     /* Cores Principais - Pastéis */
     --color-primary: #87CEEB; /* Azul Céu (Baby Blue) */
-    --color-primary-light: #E0F7FA;
-    --color-secondary: #FFFACD; /* Amarelo Suave (Lemon Chiffon) */
-    --color-tertiary: #FFE4E1; /* Rosa Claro (Misty Rose) */
-    --color-quaternary: #E0F2F1; /* Verde Menta (Teal Light) */
+    --color-primary-light: #F0F4F8;
+    --color-secondary: #F0F4F8; /* Amarelo Suave (Lemon Chiffon) */
+    --color-tertiary: #F0F4F8; /* Rosa Claro (Misty Rose) */
+    --color-quaternary: #F0F4F8; /* Verde Menta (Teal Light) */
     
     /* Cores de Ação (CTAs) */
     --color-cta: #FF9800; /* Laranja/Dourado */
@@ -20,7 +20,7 @@
     
     /* Fundos */
     --bg-white: #FFFFFF;
-    --bg-light: #F9F9F9;
+    --bg-light: #F0F4F8;
     
     /* Tipografia */
     --font-heading: 'Nunito', sans-serif;
@@ -1155,7 +1155,7 @@ img {
 
 /* 10. GUARANTEE SECTION */
 .guarantee-section-new {
-    background-color: #F0F7F4;
+    background-color: var(--color-primary-light);
     padding: 5rem 0;
     text-align: center;
 }
@@ -1571,4 +1571,25 @@ img {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* PADRONIZACAO CLEAN REQUERIDA PELO USUARIO */
+.benefit-card,
+.feature-item,
+.gallery-card,
+.testimonial-card,
+.faq-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: var(--border-radius-md);
+}
+
+.pricing-plan {
+    background-color: #FFFFFF;
+}
+
+.feature-icon {
+    background-color: #F0F4F8 !important; /* Mute the round icon background */
+    color: #1E88E5 !important; /* Make icon blue instead of pink for elegance */
 }
