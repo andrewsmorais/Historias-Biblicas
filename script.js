@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animateElements.forEach(el => observer.observe(el));
 
-    // 4. Facebook Pixel - Track InitiateCheckout on CTA button clicks
+    // 4. Facebook Pixel & Pinterest Tag - Track InitiateCheckout on CTA button clicks
     const ctaButtons = document.querySelectorAll('a.cta-button[href*="kiwify"]');
     ctaButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -79,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     value: 19.90,
                     currency: 'BRL'
                 });
+            }
+            if (typeof pintrk === 'function') {
+                pintrk('track', 'InitiateCheckout');
             }
         });
     });
